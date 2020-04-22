@@ -1,0 +1,31 @@
+body, h1{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: #000;
+}
+.text-container h1{
+    font-size: 150px;
+    color: rgba(225,225,225,1);
+    background-image: url(bg.jpg);
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: moving 60s infinite; 
+    -moz-animation: moving 60s infinite; 
+    -o-animation: moving 60s infinite; 
+    animation: moving 60s linear infinite;
+}
+/* Standard syntax */
+@keyframes moving {
+   0%{background-position: left 10px top 0px;}
+   25%{background-position: left 100px top 0px;}
+   75%{background-position: left 100px top 0px;}
+   100%{background-position: left 100px top 0px;}
+
+}
+.text-container{
+    text-align: center;
+    margin-top: 17%;
+
+}
